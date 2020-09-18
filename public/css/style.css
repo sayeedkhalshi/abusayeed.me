@@ -1,0 +1,336 @@
+html {
+  background: #eee;
+  /* opacity: 0.8; */
+}
+
+body {
+  /* background-color: #f3ddff; */
+  background-color: white;
+  font-family: 'Poppins';
+  /* max-width: 1920px; */
+  margin: 0 auto;
+  width: 95%;
+
+  box-shadow: 0 0 9px -3px #aaa;
+}
+#body,
+#curve {
+  transition: background-color 2s;
+}
+#top-section {
+  background-image: url('/img/art.svg');
+  background-color: #541f9b;
+  background-position: center;
+  background-size: cover;
+}
+
+#overlay {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#541f9b+0,af62d9+26,e078f0+46,d962c7+69,f870ad+100 */
+  background: rgb(84, 31, 155, 0.5); /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(84, 31, 155, 0.5) 0%,
+    rgba(175, 98, 217, 0.5) 26%,
+    rgba(224, 120, 240, 0.5) 46%,
+    rgba(217, 98, 199, 0.5) 69%,
+    rgba(248, 112, 173, 0.5) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(84, 31, 155, 0.5) 0%,
+    rgba(175, 98, 217, 0.5) 26%,
+    rgba(224, 120, 240, 0.5) 46%,
+    rgba(217, 98, 199, 0.5) 69%,
+    rgba(248, 112, 173, 0.5) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    rgba(84, 31, 155, 0.5) 0%,
+    rgba(175, 98, 217, 0.5) 26%,
+    rgba(224, 120, 240, 0.5) 46%,
+    rgba(217, 98, 199, 0.5) 69%,
+    rgba(248, 112, 173, 0.5) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541f9b', endColorstr='#f870ad',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  display: grid;
+  height: 95vh;
+  padding-top: 0px;
+  width: 100%;
+}
+
+/* menu */
+#menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.85);
+  margin-top: 0;
+  box-shadow: 0px 3px 10px 0px #262222;
+}
+
+#menu li {
+  padding: 5px 10px;
+  list-style: none;
+  color: rgba(92, 85, 136, 0.7);
+}
+#menu a {
+  text-decoration: none;
+}
+
+#top-section h1 {
+  /* background-color: #541f9b; */
+
+  background-color: #fff;
+  color: #4b1e77;
+  width: max-content;
+  padding: 15px 50px 6px;
+  border-radius: 0;
+  box-shadow: 0 0px 3px 0px #761b97;
+  margin: 0px auto;
+  height: max-content;
+  font-family: 'josefin sans';
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+#top-section h2 {
+  color: #ffebeb;
+  text-align: center;
+  font-family: 'Josefin sans';
+}
+
+#curve {
+  /* background-color: #f3ddff; */
+  background-color: #fff;
+  width: auto;
+  height: 100px;
+  align-content: last baseline;
+  border-radius: 100% 3% 0px 0px;
+  border-top: 7px solid #97e9;
+  box-shadow: inset 0 9px 8px -12px #552424, -2px -2px 1px 0px #e8929afa;
+}
+#curve-inner {
+  width: auto;
+  height: 44px;
+  align-content: last baseline;
+  border-radius: 33% 28px 156% 0%;
+  background-color: transparent;
+  margin-top: -45px;
+}
+
+#top-section a {
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+#top-btn {
+  font-size: 2rem;
+  color: #f0fdf9;
+  background: transparent;
+  box-shadow: 0px 2px 5px 0px #ab86b9;
+  border: 8px solid;
+  cursor: pointer;
+}
+
+/* technology section */
+#technology {
+  text-align: center;
+}
+
+#technology a {
+  border: 1px solid #eee;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: block;
+  width: max-content;
+  margin: -30px auto 55px;
+  background: #46ae91;
+  color: #fafafa;
+  box-shadow: 3px 2px 1px 2px #339960;
+  position: relative;
+}
+
+#technology h2 {
+  color: #81798c;
+  font-family: 'josefin sans';
+}
+
+#portfolio {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 5%;
+  padding: 30px;
+}
+.portfolio {
+  background: #fff;
+  text-align: center;
+  border: 0px solid #af62d9;
+  margin: 2%;
+  padding: 15px 15px 0;
+  box-shadow: 0px 0px 15px 1px #cabdbd, inset 0 0 41px 0px #fff;
+  display: grid;
+  grid-template-columns: auto;
+}
+.portfolio p {
+  color: #9f9f9f;
+}
+.portfolio h2 {
+  color: #46ae91;
+}
+.portfolio > p > a {
+  text-decoration: none;
+  color: #fafafa;
+  padding: 9px 15px 5px;
+  font-family: poppins;
+  text-transform: uppercase;
+  border: 1px solid #e8e3ee;
+  background: #4656ae;
+  margin: 20px -20px 0;
+  display: block;
+  align-content: last baseline;
+  font-weight: 900;
+  height: max-content;
+}
+q {
+  color: #7453a4;
+  font-family: 'handlee';
+  padding: 0px;
+  text-decoration: underline;
+}
+#footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  border-top: 2px solid #d0e1e1;
+  box-shadow: 0px 4px 16px 0 #777;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+#about-text {
+  position: relative;
+  padding: 0px 50px;
+  text-align: center;
+  visibility: hidden;
+  height: 0;
+  transition: visibility ease-in 0s 0s;
+}
+#about-text h1 {
+  background-color: transparent;
+  color: transparent;
+  box-shadow: 0 0 0;
+  font-family: poppins;
+  text-shadow: 1px 1px 2px #5c2f75;
+}
+
+#about-text img {
+  width: 150px;
+  height: 0;
+  border: 5px solid black;
+  margin: 15px;
+}
+.top-text {
+  color: #aa977f;
+  font-family: josefin sans;
+  font-size: 1.2rem;
+  padding: 30px;
+}
+
+/*services */
+#services-text {
+  position: relative;
+  padding: 0px 50px;
+  text-align: center;
+  visibility: hidden;
+  height: 0;
+  transition: visibility ease-in 0s 0s;
+}
+
+#services-text h1 {
+  background-color: #a443ff;
+  color: #fff;
+  box-shadow: 0 0px 13px 3px #523a5b;
+}
+
+#contact-text {
+  position: relative;
+  padding: 0px 50px;
+  text-align: center;
+  visibility: hidden;
+  height: 0;
+  transition: visibility ease-in 0s 0s;
+}
+
+input,
+textarea {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  padding: 5px;
+  background: #a443ff;
+  color: white;
+  border: 0;
+  box-shadow: 0 0px 12px 3px #624b4b;
+}
+.social {
+  color: #baafc1;
+  border: 0px solid;
+}
+
+@media only screen and (max-width: 900px) {
+  #top-section h1,
+  #top-btn {
+    width: min-content;
+    padding: 20px;
+  }
+  #portfolio {
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+  }
+
+  #overlay {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #portfolio {
+    grid-template-columns: 100%;
+    grid-gap: 0%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+}
+
+@media only screen and (max-width: 450px) {
+  #services-text,
+  #about-text,
+  #contact-text {
+    padding: 0;
+  }
+
+  #technology a {
+    margin: 30px auto 55px;
+  }
+
+  input,
+  textarea {
+    width: 230px;
+  }
+  textarea {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #menu li {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  #menu li {
+    font-size: 0.8rem;
+  }
+}
