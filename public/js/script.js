@@ -80,6 +80,7 @@ window.onload = function () {
     document.getElementById('curve').style.borderTop = '0 0';
     document.getElementById('curve').style.boxShadow = '0 0 0';
     document.getElementById('curve').style.borderRadius = '0';
+    document.querySelector('#technology a').style.margin = '30px auto 55px';
     // document.getElementById("curve").style.background = "#fff0dd";
     // document.getElementById("body").style.background = "#fff0dd";
   }
