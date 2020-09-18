@@ -1,0 +1,30 @@
+<div id="login">
+  <form
+    style="padding: 30px"
+    class="form"
+    id="login-form"
+    action="/admin-login"
+    method="POST"
+  >
+    <p class="error"><%= typeof message != 'undefined' ? message : '' %></p>
+    <input
+      type="hidden"
+      name="origin"
+      placeholder="origin"
+      value="<%= typeof origin != 'undefined' ? origin : '' %>"
+    />
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      value="<%= typeof email != 'undefined' ? email : '' %>"
+    />
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      value="<%= typeof password != 'undefined' ? password : '' %>"
+    />
+    <input type="submit" value="Login" />
+  </form>
+</div>

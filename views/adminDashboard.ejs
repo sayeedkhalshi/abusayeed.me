@@ -1,0 +1,43 @@
+<nav>
+    <ul id="menu">
+        <a id="home" href="/">
+            <li>Home</li>
+        </a>
+        <a id="aboutt" href="/">
+            <li>About</li>
+        </a>
+        <a id="servicess" href="/">
+            <li>Services</li>
+        </a>
+        <a id="blog" href="http://www.swinance.com">
+            <li>Blog</li>
+        </a>
+        <a id="contactt" href="/admin-logout">
+            <li>Logout</li>
+        </a>
+    </ul>
+</nav>
+<p class="error"><%= typeof message != 'undefined' ? message : '' %></p>
+
+<% if (typeof contacts != 'undefined') { %>
+<% let counter = 1 %>
+<% contacts.forEach((contact) => { %>
+
+
+<div id="contacts">
+        <p style="text-align:center;"><%= counter %></p>
+        <p style="width: max-content; padding: 10px; margin: 5px auto; border: 1px solid #eee;">Name:
+            <%=contact.name %></p>
+        <p style="width: max-content; padding: 10px; margin: 5px auto; border: 1px solid #eee;">Email:
+                <%=contact.email %></p>
+        <p style="width: max-content; padding: 10px; margin: 5px auto; border: 1px solid #eee;">Phone:
+                    <%=contact.phone %></p>
+        <p style="width: max-content; padding: 10px; margin: 5px auto; border: 1px solid #eee;">Descriptions:
+            <%=contact.job %></p>
+    
+</div>
+    <% counter += 1 %>
+
+<% }) %>
+<% } %>
+<div id="footer">With &COPY;abusayeed.me</div>

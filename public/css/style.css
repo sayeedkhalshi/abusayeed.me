@@ -334,3 +334,12 @@ textarea {
     font-size: 0.8rem;
   }
 }
+.error {
+  text-align: center;
+}
+#contacts {
+  background: #eee;
+  margin: 30px auto;
+  width: max-content;
+  padding: 20px;
+}
