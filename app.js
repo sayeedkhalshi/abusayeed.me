@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const expressLayout = require('express-ejs-layouts');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
 const rateLimit = require('express-rate-limit');
@@ -15,13 +16,14 @@ const app = express();
 const indexRoutes = require('./routes/indexRoutes');
 
 //enable trust proxy
-// app.enable('trust-proxy');
+app.enable('trust-proxy');
 
 //cors
 app.use(cors());
 app.options('*', cors());
 
 //view setup
+app.use(expressLayout);
 app.set('view engine', 'ejs');
 
 //public
