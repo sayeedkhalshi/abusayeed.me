@@ -103,7 +103,6 @@ body {
   /* background-color: #f3ddff; */
   background-color: #fff;
   width: auto;
-  height: 100px;
   align-content: last baseline;
   border-radius: 100% 3% 0px 0px;
   border-top: 7px solid #97e9;
@@ -135,6 +134,7 @@ body {
 
 /* technology section */
 #technology {
+  background-color: #fff;
   text-align: center;
 }
 
@@ -144,7 +144,7 @@ body {
   text-decoration: none;
   display: block;
   width: max-content;
-  margin: -30px auto 55px;
+  margin: -0.63% auto 55px;
   background: #46ae91;
   color: #fafafa;
   box-shadow: 3px 2px 1px 2px #339960;
