@@ -68,7 +68,7 @@ exports.signup = catchAsync(async (req, res, next) => {
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,
     phone: req.body.phone,
-    role: 'admin',
+    role: 'user',
   });
 
   //generate jwt token to verify email
