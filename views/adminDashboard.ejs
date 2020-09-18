@@ -27,13 +27,16 @@
 <div id="contacts">
         <p style="text-align:center;"><%= counter %></p>
         <p style="width: max-content; padding: 10px; margin: 5px auto; border: 1px solid #eee;">Name:
-            <%=contact.name %></p>
+            <%= contact.name %></p>
         <p style="width: max-content; padding: 10px; margin: 5px auto; border: 1px solid #eee;">Email:
-                <%=contact.email %></p>
+                <%= contact.email %></p>
         <p style="width: max-content; padding: 10px; margin: 5px auto; border: 1px solid #eee;">Phone:
-                    <%=contact.phone %></p>
+                    <%= contact.phone %></p>
         <p style="width: max-content; padding: 10px; margin: 5px auto; border: 1px solid #eee;">Descriptions:
-            <%=contact.job %></p>
+            <%= contact.job %></p>
+         <% const localtime = contact.createdAt.toLocaleString() %>
+        <p>Local time: <%= localtime %></p>
+
     
 </div>
     <% counter += 1 %>
