@@ -15,11 +15,11 @@ const app = express();
 const indexRoutes = require('./routes/indexRoutes');
 
 //enable trust proxy
-app.enable('trust-proxy');
+// app.enable('trust-proxy');
 
 //cors
-// app.use(cors());
-// app.options('*', cors());
+app.use(cors());
+app.options('*', cors());
 
 //view setup
 app.set('view engine', 'ejs');
