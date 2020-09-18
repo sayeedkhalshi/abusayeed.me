@@ -47,11 +47,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-//mongoDB sanitization against NOSQL injection
-app.use(mongoSanitize());
+// //mongoDB sanitization against NOSQL injection
+// app.use(mongoSanitize());
 
-//data sanitize against xss
-app.use(xss());
+// //data sanitize against xss
+// app.use(xss());
 
 //prevent parameter pollution
 app.use(hpp());
