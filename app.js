@@ -28,7 +28,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 //helmet
-app.use(helmet());
+// app.use(helmet());
 
 //rate limit
 app.use(
@@ -55,7 +55,7 @@ app.use(xss());
 app.use(hpp());
 
 //compressing data
-// app.use(compression());
+app.use(compression());
 
 /*routes
 //all 
