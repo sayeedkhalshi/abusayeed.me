@@ -18,8 +18,8 @@ const indexRoutes = require('./routes/indexRoutes');
 app.enable('trust-proxy');
 
 //cors
-app.use(cors());
-app.options('*', cors());
+// app.use(cors());
+// app.options('*', cors());
 
 //view setup
 app.set('view engine', 'ejs');
@@ -28,7 +28,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 //helmet
-// app.use(helmet());
+app.use(helmet());
 
 //rate limit
 app.use(
