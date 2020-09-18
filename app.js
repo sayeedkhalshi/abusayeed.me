@@ -15,12 +15,12 @@ const app = express();
 //link to routes
 const indexRoutes = require('./routes/indexRoutes');
 
-// //enable trust proxy
-// app.enable('trust-proxy');
+//enable trust proxy
+app.enable('trust-proxy');
 
-// //cors
-// app.use(cors());
-// app.options('*', cors());
+//cors
+app.use(cors());
+app.options('*', cors());
 
 //view setup
 app.use(expressLayout);
@@ -32,32 +32,32 @@ app.use(express.static(path.join(__dirname, 'public')));
 // //helmet
 // app.use(helmet());
 
-// //rate limit
-// app.use(
-//   '*',
-//   rateLimit({
-//     max: 1000,
-//     windowMs: 60 * 60 * 1000,
-//     message: 'Too many request. Please try again after 1 hour',
-//   })
-// );
+//rate limit
+app.use(
+  '*',
+  rateLimit({
+    max: 1000,
+    windowMs: 60 * 60 * 1000,
+    message: 'Too many request. Please try again after 1 hour',
+  })
+);
 
 //body parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// //mongoDB sanitization against NOSQL injection
-// app.use(mongoSanitize());
+//mongoDB sanitization against NOSQL injection
+app.use(mongoSanitize());
 
-// //data sanitize against xss
-// app.use(xss());
+//data sanitize against xss
+app.use(xss());
 
-// //prevent parameter pollution
-// app.use(hpp());
+//prevent parameter pollution
+app.use(hpp());
 
-// //compressing data
-// app.use(compression());
+//compressing data
+app.use(compression());
 
 /*routes
 //all 
