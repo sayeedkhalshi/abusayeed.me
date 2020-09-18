@@ -23,7 +23,7 @@ mongoose
   .then(console.log('mongoose connected'));
 
 //start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const server = app.listen(
   PORT,
   console.log(`abusayeed.me started at port: ${PORT}`)

@@ -55,7 +55,7 @@ app.use(xss());
 app.use(hpp());
 
 //compressing data
-app.use(compression());
+// app.use(compression());
 
 /*routes
 //all 
