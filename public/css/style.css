@@ -17,6 +17,7 @@ body {
 #curve {
   transition: background-color 2s;
 }
+
 #top-section {
   background-image: url('/img/art.svg');
   background-color: #541f9b;
